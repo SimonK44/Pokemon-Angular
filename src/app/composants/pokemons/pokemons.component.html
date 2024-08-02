@@ -1,1 +1,13 @@
-<p>pokemons works!</p>
+<h1>Les 6 premiers Pokemons</h1>
+
+<div class="flex flex-wrap gap-1 justify-center">Dans l'ordre du Pokedex :
+    <ul class="list-disc list-inside">        
+        <li class="ml-6" *ngFor="let pokemon of pokemons">
+            {{pokemon.nom}}
+            Catégorie : {{pokemon.categorie}}
+            Type : {{pokemon.type}}
+            Taille : {{pokemon.taille}}
+            Poids : {{pokemon.poids}}    
+        </li>
+    </ul>
+</div>
